@@ -208,31 +208,41 @@ header {
 @media (max-width:750px) {
     .header {
         position: absolute;
-        height: 20%;
+        height: 15%;
     }
     .banniere {
         width: 100%;
-        height: 20px;
-        position: relative;
+        height: 15px;
     }
     .banniere .menu_profil {
         display: none;
-        margin-top: 55vh;
-        position: absolute;
-        margin-left: -1px;
+        margin-top: 65vh;
+        margin-left: -8vh;
         background-color: #3f8880;
         border-radius: 5px;
+        width: 25%;
+
     }    
     .banniere .menu_profil ul {
-        height: 100%;
         transition: 0.5s;
-        padding-left: 20px;
-        padding-top: 40px;
-        padding-right: 20px;
-        padding-bottom: 10px;
+        padding-top: 35px;
         display: flex;
         flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
+
+    .banniere .menu_profil ul li {
+        width: 100%;
+        padding-block: 11.5px;
+        
+    }
+    .banniere .menu_profil ul li:hover {
+        background-color: aquamarine;
+        transition: 0.5s ease-out;
+    }
+
     .banniere .ligne_vertical_en_tete {
         display: none;
     }
@@ -244,12 +254,13 @@ header {
     .banniere .burger {
         cursor: pointer;
         display: flex;
-        position: absolute;
-
+        margin-left: -65vh;
+        position: relative;
     }
     .banniere .burger span {
         color: #fff;
         font-size: 50px;
+        
     }
     .contenu {
         margin-block: 30px;
@@ -275,5 +286,6 @@ header {
         align-items: center;
     }
 }
+
 
 /* Responsive */
