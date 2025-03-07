@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bafode Sy Savane</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
-</head>
+    </head>
 
 <body>
     <!-- Header -->
@@ -41,16 +41,14 @@
 
     <!-- Contenu -->
     <div class="contenu">
-        <div>
-            <h1 class="titre">Bafode SY SAVANE</h1>
-            <div class="ligne_horizontal_contenu"></div>
-            <p class="qui_suis_je">
-                Dévelopeur web full stack. <br>
-                Je développe des solutions web adaptées à vos bésoins <br>
-                en tenant compte des paramètres de sécurité qui permettent <br>
-                une utilisation simple et rassurante.
-            </p>
-        </div>
+        <h1 class="titre">Bafode SY SAVANE</h1>
+        <div class="ligne_horizontal_contenu"></div>
+        <p class="qui_suis_je">
+            Dévelopeur web full stack. <br>
+            Je développe des solutions web adaptées à vos bésoins <br>
+            en tenant compte des paramètres de sécurité qui permettent <br>
+            une utilisation simple et rassurante.
+        </p>
     </div>
     <!-- Contenu -->
 
@@ -82,13 +80,11 @@
             </div>
         </div>
         <div class="block">
-            <a href="https://htmlpreview.github.io/?https://github.com/fodesy/cloneBurger/blob/main/index.html" target="_blank"><img src="images/BurgerKing_Logo_256.png" alt=""></a>
+            <a href="../BurgerKing09082022/index.html"><img src="images/BurgerKing_Logo_256.png" alt=""></a>
             <div class="content_block">
                 <h3>Clone</h3>
                 <p>Clone d'un site en apprentissage</p>
-                <button> 
-                    <a href="https://htmlpreview.github.io/?https://github.com/fodesy/cloneBurger/blob/main/index.html" target="_blank">Lire plus</a>
-                </button>
+                <button>Lire plus</button>
             </div>
         </div>
         <div class="block">
@@ -104,6 +100,20 @@
 
     <!-- Contenu menu compétences -->
 
+    <!--Script-->
+    <script>
+        var burger = document.querySelector('.burger');
+        var menu_profil = document.querySelector('.menu_profil');
+        burger.onclick = function () {
+            if (menu_profil.style.display == 'none') {
+                menu_profil.style.display = 'flex';
+            } else {
+                menu_profil.style.display = 'none';    
+            }
+        }
+
+    </script>
+    <!--Script-->
 </body>
 
 </html>
