@@ -29,6 +29,7 @@ header {
     display: none;
 }
 
+
 .banniere img {
     width: 100px;
     height: 120px;
@@ -215,16 +216,22 @@ header {
         position: relative;
     }
     .banniere .menu_profil {
-        display: 0;
+        display: none;
+        margin-top: 55vh;
         position: absolute;
+        margin-left: -1px;
         background-color: #3f8880;
-    }
+        border-radius: 5px;
+    }    
     .banniere .menu_profil ul {
+        height: 100%;
+        transition: 0.5s;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 10px;
         display: flex;
         flex-direction: column;
-        position: relative;
-        
-        
     }
     .banniere .ligne_vertical_en_tete {
         display: none;
@@ -235,6 +242,8 @@ header {
         margin-top: 60px;
     }
     .banniere .burger {
+        cursor: pointer;
+        display: flex;
         position: absolute;
 
     }
@@ -267,9 +276,4 @@ header {
     }
 }
 
-
 /* Responsive */
-
-
-
-
