@@ -172,6 +172,9 @@ header {
     height: 250px;
     object-fit: cover;
 }
+.block_slide_menu_html_css .block img {
+    box-shadow: 0 0 10px #3f8880;
+}
 
 .block .content_block {
     padding-top: 80px;
