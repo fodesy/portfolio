@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/63fddbfc93.js" crossorigin="anonymous"></script>
     <title>SY SAVANE</title>
 </head>
@@ -15,8 +15,10 @@
     <div id="modalBienvenue">
         <div class="modal-contenu">
             <h2>Bienvenue sur mon portfolio !
-                <br>Il est en cours de construction.
-                <br> Merci
+                <br>En cours de construction.
+                <br>Ce message s'affiche pour la prémière fois <br>
+                que vous cliquez sur mon portfolio.
+                <br> Merci.
             </h2>
 
             <button class="modal-btn" onclick="fermerModal()">Fermer</button>
@@ -27,29 +29,42 @@
     <!-- En tête -->
 
     <header>
-        <img src="images/photo_de_profil.png">
-        <div class="header_ligne_vertical"></div>
-        <ul>
+        <img src="images/photo_de_profil.png" class="eclaire_blanc">
+        <h1 class="eclaire_blanc">Bafode SY SAVANE</h1>
+        <i class="fa-solid fa-code eclaire_blanc"></i>
+        <!--<div class="header_ligne_vertical"></div>-->
+        <!-- <ul>
             <li><i class="fa-solid fa-circle-user"></i><a href="#qui_suis_je">Qui suis-je</a></li>
             <li><i class="fa-solid fa-lightbulb"></i><a href="#competences">Compétences</a></li>
             <li><i class="fa-solid fa-toolbox"></i><a href="#experiences">Experiences</a></li>
             <li><i class="fa-solid fa-id-card"></i><a href="#contact">Contact</a></li>
         </ul>
+    -->
     </header>
 
     <!-- Fin en tête -->
 
     <!-- Contenu -->
     <div class="contenu">
-        <h1>Bafode SY SAVANE</h1>
         <p>Développeur web full stack. Je développe des solutions web adaptées à vos besoins <br>en tenant compte des
-            paramètres de sécurité qui permettent une utilisation facile et rassurante.</p>
+            paramètres de sécurité qui permettent une utilisation facile et rassurante. </p>
+
+        <div class="qui_suis_je">
+            <div class="titre_qui_sui_je">
+                <i class="fa-solid fa-circle-user"></i><a href="#qui_suis_je">Qui suis-je ?</a>
+            </div>
+            <div class="resume_presentation">
+                <p>L'innovation, la créativité et le souci du détail sont au cœur de mon approche. je m'efforce de créer
+                    des expériences uniques et mémorables dans mes projets. <br> <br> Ce portfolio présente une sélection de mes
+                    projets, reflétant ma passion pour le <b style="color: #3f8880;">développement web</b> et mon engagement envers l'excellence.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Fin contenu -->
 
 
-    
+
     <script>
         // Au chargement de la page
         window.onload = function () {
