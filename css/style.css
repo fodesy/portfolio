@@ -67,7 +67,9 @@ header {
     align-items: center;
     gap: 180px;
     text-align: center;
-    box-shadow: 0px 70px 20vh rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 1px 1vh rgba(255, 255, 255, 0.2);
+    background-color: rgba(63, 136, 128, 0.1);
+
 }
 
 #profile {
@@ -83,13 +85,13 @@ header {
 #code_icon {
     cursor: pointer;
     color: #3f8880;
-    border: 1px solid #3f8880;
-    border-radius: 100px; 
+    border-radius: 100px;
     padding: 10px;
     box-shadow: 0px 0px 15px rgba(63, 136, 128, 0.5);
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
 }
+
 header h1 {
     /*margin-top: 50px;*/
     color: #fff;
@@ -116,18 +118,19 @@ header h1 {
     line-height: 1.5;
     margin-bottom: 80px;
 }
+
 .contenu .qui_suis_je {
     height: auto;
     display: flex;
     flex-direction: column;
 }
+
 .contenu .qui_suis_je .block_titre_qui_sui_je {
     display: flex;
     gap: 20px;
     align-items: center;
     text-align: center;
     width: 15%;
-    box-shadow: 0px 0px 15px rgba(63, 136, 128, 0.2);
     margin-left: 100px;
     cursor: pointer;
     border-top-left-radius: 30px;
@@ -140,13 +143,14 @@ header h1 {
     font-size: 19px;
     letter-spacing: 2px;
     text-align: center;
+    transition: 0.5s ease-out;
 
 }
 
 #avatar_male_man_person_user_icon {
     width: 60px;
     height: 60px;
-    background-color: #3f8880; 
+    background-color: rgba(63, 136, 128, 0.5);
     text-align: center;
     border-radius: 100px;
 }
@@ -159,14 +163,55 @@ header h1 {
     margin-top: -8.7vh;
     border-radius: 5px;
     padding-inline: 30px;
+    transition: 0.5s ease-out;
+    
 }
 
-
+.contenu .qui_suis_je .resume_presentation:hover {
+    background-color: rgba(63, 136, 128, 0.1);
+}
 
 .contenu .qui_suis_je .resume_presentation p {
     font-size: 18px;
     letter-spacing: 1.5px;
-    text-align: justify;   
+    text-align: justify;
 }
+
+.contenu .skills {
+    margin-top: 80px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenu .skills .block_skills {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    width: 15%;
+    margin-left: 100px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.contenu .skills .block_skills .titre_skills {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#skills_icon_blanc {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(63, 136, 128, 0.5);
+    text-align: center;
+    border-radius: 100px;
+    
+}
+
 
 /* Fin contenu */
