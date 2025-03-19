@@ -70,26 +70,25 @@ header {
     box-shadow: 0px 70px 20vh rgba(255, 255, 255, 0.3);
 }
 
-header img {
+#profile {
     border-radius: 50%;
-    box-shadow: 0px 0px 20px rgba(63, 136, 128, 0.3);
+    box-shadow: 0px 0px 15px rgba(63, 136, 128, 0.5);
     object-fit: contain;
-    /*margin-block: 5px;
-    margin-left: 100px;*/
     cursor: pointer;
     width: 100px;
     height: 100px;
     margin-left: 20%;
 }
 
-header i {
+#code_icon {
     cursor: pointer;
     color: #3f8880;
-    font-size: 70px;
     border: 1px solid #3f8880;
-    border-radius: 100px;
+    border-radius: 100px; 
     padding: 10px;
-    box-shadow: -10px 8px 5px rgba(63, 136, 128, 0.3);
+    box-shadow: 0px 0px 15px rgba(63, 136, 128, 0.5);
+    width: 60px;
+    height: 60px;
 }
 header h1 {
     /*margin-top: 50px;*/
@@ -122,36 +121,42 @@ header h1 {
     display: flex;
     flex-direction: column;
 }
-.contenu .qui_suis_je .titre_qui_sui_je {
+.contenu .qui_suis_je .block_titre_qui_sui_je {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
     text-align: center;
     width: 15%;
-    box-shadow: 0px 0px 20px rgba(63, 136, 128, 0.5);
+    box-shadow: 0px 0px 15px rgba(63, 136, 128, 0.2);
     margin-left: 100px;
     cursor: pointer;
-    border-top-left-radius: 23px;
-    border-bottom-left-radius: 23px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
-.contenu .qui_suis_je .titre_qui_sui_je i {
-    font-size: 50px;
-    color: #3f8880;
-}
-
-.contenu .qui_suis_je .titre_qui_sui_je a {
+.contenu .qui_suis_je .titre_qui_sui_je {
     text-decoration: none;
     color: #fff;
     font-size: 19px;
     letter-spacing: 2px;
+    text-align: center;
+
 }
+
+#avatar_male_man_person_user_icon {
+    width: 60px;
+    height: 60px;
+    background-color: #3f8880; 
+    text-align: center;
+    border-radius: 100px;
+}
+
 
 .contenu .qui_suis_je .resume_presentation {
     box-shadow: 0px 0px 20px rgba(63, 136, 128, 0.1);
     width: 60%;
-    margin-left: 47vh;
-    margin-top: -7vh;
+    margin-left: 46vh;
+    margin-top: -8.7vh;
     border-radius: 5px;
     padding-inline: 30px;
 }
