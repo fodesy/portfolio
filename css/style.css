@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 /* Style de la fenêtre modale */
 #modalBienvenue {
     display: none;
@@ -76,27 +78,15 @@ header {
     border-radius: 50%;
     box-shadow: 0px 0px 15px rgba(63, 136, 128, 0.5);
     object-fit: contain;
-    /*margin-block: 5px;
-    margin-left: 100px;*/
     cursor: pointer;
     width: 100px;
     height: 100px;
     margin-left: 20%;
 }
 
-/*
-header img:hover + h1 {
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
-}
-header img:hover {
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
-}
-    */
-
 #code_icon {
     cursor: pointer;
     color: #3f8880;
-    /*border: 1px solid #3f8880;*/
     border-radius: 100px;
     padding: 10px;
     box-shadow: 0px 0px 15px rgba(63, 136, 128, 0.5);
@@ -105,71 +95,20 @@ header img:hover {
 }
 
 header h1 {
-    /*margin-top: 50px;*/
     color: #fff;
     text-align: center;
     letter-spacing: 3px;
     background-color: transparent;
 }
 
-/*
-.header_ligne_vertical {
-    background-color: #3f8880;
-    width: 3px;
-    height: 80px;
-    margin-block-start: 20px;
-}
-
-
-header ul {
-    display: flex;
-    gap: 100px;
-    font-size: 17px;
-    align-items: center;
-}
-
-header ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    cursor: pointer;
-    transition: 0.5s ease-out;
-
-}
-
-header ul li:hover {
-    box-shadow: 0px 0px 60px rgba(63, 136, 128, 1);
-    letter-spacing: 2px;
-
-
-}
-
-header ul li i {
-    font-size: 50px;
-    color: #3f8880;
-
-}
-
-header ul li a {
-    text-decoration: none;
-    color: #fff;
-    border-top: 3px solid #3f8880;
-    margin-block-start: 10px;
-    padding: 5px;
-}
-    */
-
-/* Fin en tête */
-
-/* Contenu */
-
 .contenu {
     width: 100%;
     margin-top: 40px;
 }
 
-.contenu p {
+/* Contenu presentation */
+
+.contenu .p_contenu {
     text-align: center;
     color: #fff;
     font-size: 18px;
@@ -191,7 +130,6 @@ header ul li a {
     align-items: center;
     text-align: center;
     width: 15%;
-    /*box-shadow: 0px 0px 15px rgba(63, 136, 128, 0.1);*/
     margin-left: 100px;
     cursor: pointer;
     border-top-left-radius: 30px;
@@ -201,9 +139,6 @@ header ul li a {
 .contenu .qui_suis_je .titre_qui_sui_je {
     text-decoration: none;
     color: #fff;
-    /* border-top: 3px solid #3f8880;
-    border-bottom: 3px solid #3f8880;
-    border-right: 3px solid #3f8880;*/
     font-size: 19px;
     letter-spacing: 2px;
     text-align: center;
@@ -228,19 +163,29 @@ header ul li a {
     border-radius: 5px;
     padding-inline: 30px;
     transition: 0.5s ease-out;
-    
+    color: #fff;
 }
 
 .contenu .qui_suis_je .resume_presentation:hover {
     background-color: rgba(63, 136, 128, 0.1);
 }
 
-.contenu .qui_suis_je .resume_presentation p {
+.contenu .qui_suis_je .resume_presentation .p_resume_prestation {
     font-size: 18px;
     letter-spacing: 1.5px;
     text-align: justify;
+    margin-bottom: 0px;
+}
+.resume_presentation .p_resume_prestation .span {
+    font-weight: bold;
+    color: #3f8880;
 }
 
+/* Fin contenu presentation */
+
+/* Mes compétences */
+
+/* Titre des langages appris */
 .contenu .skills {
     margin-top: 80px;
     height: auto;
@@ -254,7 +199,6 @@ header ul li a {
     align-items: center;
     text-align: center;
     width: 15%;
-    /*box-shadow: 0px 0px 15px rgba(63, 136, 128, 0.2);*/
     margin-left: 100px;
     cursor: pointer;
     border-top-left-radius: 30px;
@@ -264,9 +208,6 @@ header ul li a {
 .contenu .skills .block_skills .titre_skills {
     text-decoration: none;
     color: #fff;
-    /* border-top: 3px solid #3f8880;
-    border-bottom: 3px solid #3f8880;
-    border-right: 3px solid #3f8880;*/
     font-size: 19px;
     letter-spacing: 2px;
     text-align: center;
@@ -278,17 +219,104 @@ header ul li a {
     background-color: rgba(63, 136, 128, 0.5);
     text-align: center;
     border-radius: 100px;
+}
+
+.skills .langages_skills {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+
+.skills .langages_skills li {
+    border: 1px solid #3f8880;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.skills .langages_skills li:hover {
+    background-color: rgba(63, 136, 128, 0.5);
+    letter-spacing: 3px;
+}
+
+.skills .langages_skills li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Fin Titre des langages appris */
+
+
+/* Block de mes projets réalisés */
+
+.block_skills_slide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 46vh;
+}
+
+.block_skills_slide .block {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    width: 30%;
+    height: 25vh;
+    text-align: center;
+}
+
+.block_skills_slide .block a {
+    position: absolute;
+    width: 50vh;
+    height: 25vh;
+    transition: 0.5s ease-out;
     
 }
 
-.resume_presentation p .span {
-    font-weight: bold;
-    color: #3f8880;
+.block_skills_slide .block a:hover {
+    background-color: rgba(0, 0, 0, 1);
 }
 
-.resume_presentation p {
-    margin-bottom: 0px;
+.block_skills_slide .block a img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-out;
 }
 
+.block_skills_slide .block a img:hover {
+    opacity: 0.2;
+}
+
+.titre_apercu_stack {
+    background-color: rgba(63, 136, 128, 0.7);
+    width: 50%;
+    height: 50px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.block_skills_slide .block .p_contenu_slide_skill {
+    color: #fff;
+    width: 100%;
+    background-color: rgba(63, 136, 128, 0.7);
+    position: relative;
+    padding: 5px;
+    font-weight: bolder;
+    word-spacing: 0px;
+    letter-spacing: 2px;
+    flex-wrap: wrap ;
+
+}
+
+/* Block de mes projets réalisés */
 
 /* Fin contenu */
