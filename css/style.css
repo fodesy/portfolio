@@ -281,7 +281,7 @@ header ul li a {
     
 }
 
-.resume_presentation p span {
+.resume_presentation p .span {
     font-weight: bold;
     color: #3f8880;
 }
