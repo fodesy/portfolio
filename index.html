@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/63fddbfc93.js" crossorigin="anonymous"></script>
+    <title>SY SAVANE</title>
+</head>
+
+<body>
+
+    <!-- Fenêtre modale -->
+    <div id="modalBienvenue">
+        <div class="modal-contenu">
+            <h2>Bienvenue sur mon portfolio !
+                <br>Il est en cours de construction.
+                <br> Merci
+            </h2>
+
+            <button class="modal-btn" onclick="fermerModal()">Fermer</button>
+        </div>
+    </div>
+    <!-- FIN Fenêtre modale -->
+
+    <!-- En tête -->
+
+    <header>
+        <img src="images/photo_de_profil.png">
+        <ul>
+            <!--<li><i class="fa-solid fa-circle-user"></i><a href="#qui_suis_je">Qui suis-je</a></li>-->
+            <li><i class="fa-solid fa-lightbulb"></i><a href="#competences">Compétences</a></li>
+            <li><i class="fa-solid fa-toolbox"></i><a href="#experiences">Experiences</a></li>
+            <li><i class="fa-solid fa-id-card"></i><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Fin en tête -->
+
+    <!-- Contenu -->
+    <div class="section">
+        <div class="soft_skills">
+            <h2>Softs skills</h2>
+            <ul>
+                <li><i class="fa-solid fa-people-group"></i> Esprit d'équipe</li>
+                <li><i class="fa-solid fa-lightbulb"></i> Créativité</li>
+                <li><i class="fa-solid fa-clipboard-check"></i> Organisation</li>
+                <li><i class="fa-solid fa-headset"></i> Communication</li>
+                <li><i class="fa-solid fa-rocket"></i> Adaptabilité</li>
+            </ul>
+        </div>
+        <div class="profil_resume">
+            <h1>Bafode SY SAVANE</h1>
+            <p>Je suis un développeur web passionné par la conception des applications et de sites web. Mon objectif est
+                de
+                concevoir des solutions innovantes et fonctionnelles qui répondent aux besoins des utilisateurs.</p>
+            <p>Je maîtrise plusieurs langages de programmation et technologies, ce qui me permet de travailler sur des
+                projets variés, allant du développement front-end au back-end. Je suis également à l'aise avec les bases
+                de données et les outils de versioning, ce qui me permet de gérer efficacement le code source et les
+                versions des projets.</p>
+            <p>Mon expérience inclut la création de sites web responsives, l'intégration de fonctionnalités interactives
+                et la mise en place de systèmes de gestion de contenu. Je suis toujours à la recherche de nouvelles
+                opportunités pour apprendre et améliorer mes compétences.</p>
+            <p>Je suis convaincu que la collaboration et l'échange d'idées sont essentiels pour réussir dans le
+                développement web. J'aime travailler en équipe et partager mes connaissances avec les autres.</p>
+            <p>Si vous êtes à la recherche d'un développeur web passionné et motivé, n'hésitez pas à me contacter. Je
+                serais ravi de discuter de vos projets et de voir comment je peux contribuer à leur succès.</p>
+
+
+        </div>
+    </div>
+
+    <div class="liste_competences">
+        <ul>
+            <li><i class="fa-solid fa-code"></i></i> Langages </li>
+            <li><i class="fa-solid fa-database"></i> Base de données</li>
+            <li>Framework</li>
+            <li>IDE</li>
+            <li><i class="fa-brands fa-git-alt"></i> Outils de versioning</li>
+            <li><i class="fa-solid fa-server"></i> Serveurs</li>
+        </ul>
+    </div>
+    
+
+    <!-- Fin contenu -->
+
+
+    <script src="script.js"></script>
+    <script>
+        // Au chargement de la page
+        window.onload = function () {
+            // Vérifie si c'est la première visite
+            if (!localStorage.getItem("visited")) {
+                // Affiche la fenêtre modale
+                document.getElementById("modalBienvenue").style.display = "flex";
+
+                // Enregistre que l'utilisateur a visité
+                localStorage.setItem("visited", true);
+            }
+        };
+
+        // Fonction pour fermer la fenêtre modale
+        function fermerModal() {
+            document.getElementById("modalBienvenue").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
