@@ -235,10 +235,11 @@ header ul li a {
 .liste_competences .element_competence .titre_element_competence {
     background-color: #3f8880;
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px;
     border-radius: 50px;
     transition: 0.5s ease-in-out;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .liste_competences .element_competence ul li {
@@ -286,6 +287,54 @@ header ul li a {
     color: #007396;
 }
 
+.lang-icon.node {
+    color: #339933;
+}
+
+.lang-icon.django {
+    color: #092e20;
+}
+
+.lang-icon.mysql {
+    color: #4479a1;
+}
+
+.lang-icon.mongodb {
+    color: #47a248;
+}
+
+.lang-icon.wordpress {
+    color: #21759b;
+}
+
+.lang-icon.joomla {
+    color: #f44321;
+}
+
+.lang-icon.vscode {
+    color: #007acc;
+}
+
+.lang-icon.pycharm {
+    color: #000000;
+}
+
+.lang-icon.github {
+    color: #181717;
+}
+
+.lang-icon.gitlab {
+    color: #fc6d26;
+}
+
+.lang-icon.apache {
+    color: #d22128;
+}
+
+.lang-icon.iis {
+    color: #0078d7;
+}
+
 .lang-icon:hover {
     transform: scale(1.15) rotate(-6deg);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -307,6 +356,18 @@ header ul li a {
         grid-column: auto;
     }
 
+    .theme_competences {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titre_element_competence {
+        transition: 0.5s ease-in-out;
+        font-weight: bolder;
+    }
+
     .profil_resume {
         grid-column: auto;
     }
@@ -316,10 +377,12 @@ header ul li a {
         height: auto;
         padding: 10px 0;
         gap: 10px;
+        
     }
 
     header img {
         width: 20%;
+        align-self: center;        
     }
 
     header ul {
