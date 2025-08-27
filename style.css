@@ -291,7 +291,43 @@ header ul li a {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-
-
-
 /* Fin contenu */
+
+/* responsive media queries */
+
+@media (max-width: 768px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .soft_skills {
+        margin-bottom: 20px;
+        grid-column: auto;
+    }
+
+    .profil_resume {
+        grid-column: auto;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    header img {
+        width: 20%;
+    }
+
+    header ul {
+        gap: 50px;
+        font-size: 14px;
+    }
+
+    header ul li i {
+        font-size: 24px;
+    }
+}
